@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Header = () => {
   return (
-    <div className="w-[920px] h-[72px] bg-white rounded-full border-[#DEE5ED] border flex items-center justify-between  pl-[20px] pr-[14px] mt-8">
+    <div className="mx-auto w-[920px] h-[72px] bg-white rounded-full border-[#DEE5ED] border flex items-center justify-between  pl-[20px] pr-[14px] mt-8">
       <div className="flex gap-2 items-center justify-center">
         <Image src="/images/Logo.png" alt="Logo" width={38} height={38} />
         <span className="font-semibold text-[20px]">Expense Scout</span>

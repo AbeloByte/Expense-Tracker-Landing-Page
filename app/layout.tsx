@@ -25,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${urbanist.variable} ${inter.variable} antialiased`}>
+    <html>
+      <body
+        lang="en"
+        className={`${urbanist.variable} ${inter.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
