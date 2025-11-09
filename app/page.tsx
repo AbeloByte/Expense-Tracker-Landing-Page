@@ -1,8 +1,8 @@
-import Header from "@/components/layout/Header";
 import Features from "@/components/sections/Features";
 import HeroSection from "@/components/sections/HeroSection";
 import SpendWise from "@/components/sections/SpendWise";
-import Image from "next/image";
+import Confidentiality from "@/components/sections/Confidentiality";
+import Testimonial from "@/components/sections/Testimonial";
 
 export default function Home() {
   return (
@@ -21,6 +21,8 @@ export default function Home() {
       <main className="container flex flex-col gap-16 ">
         <Features />
         <SpendWise />
+        <Confidentiality />
+        <Testimonial />
       </main>
     </div>
   );

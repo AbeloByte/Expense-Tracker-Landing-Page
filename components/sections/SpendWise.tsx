@@ -11,12 +11,12 @@ const SpendWise = () => {
         description="Your finances, your way — track every expense, build better budgets, and hit your savings goals. With smart tools and simple visuals, managing money has never felt this easy or this rewarding."
       />
 
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-8">
         {/* Wide Bento */}
         <div className="flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
           <div className="flex flex-col justify-between  ">
             <Image
-              src="/images/clip path group Icon.svg"
+              src="/Icons/clip path group Icon.svg"
               width={56}
               height={56}
               alt=""
@@ -32,10 +32,9 @@ const SpendWise = () => {
               <Image
                 src="/images/mobile chart ui.svg"
                 alt="Description of image"
-                className="w-full h-auto"
+                className="w-full h-auto relative top-11"
                 width={309}
                 height={317}
-                style={{ objectFit: "cover", objectPosition: "bottom" }}
               />
 
               <Image
@@ -51,13 +50,13 @@ const SpendWise = () => {
         </div>
 
         <div className="flex gap-8">
-          {/* smaller Bento */}
+          {/* smaller Bento  1*/}
           <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             <div className="flex gap-11">
               {" "}
               <div className="flex flex-col justify-between  ">
                 <Image
-                  src="/images/clip path group Icon.svg"
+                  src="/Icons/SoketIcon.svg"
                   width={56}
                   height={56}
                   alt=""
@@ -71,21 +70,21 @@ const SpendWise = () => {
               <Image
                 src="/images/crypto Exchange.svg"
                 alt="Description of image"
-                className="w-full h-auto"
+                className="w-full h-auto relative top-10.5"
                 width={309}
                 height={317}
                 style={{ objectFit: "cover", objectPosition: "bottom" }}
               />
             </div>
           </div>
-          {/* smaller Bento */}
+          {/* smaller Bento 2*/}
           <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             <div className="">
               {" "}
               <div className="flex flex-row   gap-23.5">
                 <div className="flex flex-col justify-between  ">
                   <Image
-                    src="/images/clip path group Icon.svg"
+                    src="/Icons/money path.svg"
                     width={56}
                     height={56}
                     alt=""
@@ -94,7 +93,7 @@ const SpendWise = () => {
                 <Image
                   src="/images/Flight Ticket Cards.svg"
                   alt="Description of image"
-                  className=" "
+                  className="scale-150 "
                   width={360}
                   height={173}
                 />
@@ -102,6 +101,62 @@ const SpendWise = () => {
               <CardHeadingTitle
                 title="Saving Plans"
                 description="Set goals and watch your savings grow."
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-8">
+          {/* smaller Bento 3*/}
+          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            <div className="flex gap-11">
+              {" "}
+              <Image
+                src="/images/Budget plan ui.svg"
+                alt="Description of image"
+                className="w-full h-auto relative top-10.5"
+                width={310}
+                height={317}
+              />
+              <div className="flex flex-col justify-between ">
+                <Image
+                  src="/Icons/book icon.svg"
+                  width={56}
+                  height={56}
+                  alt=""
+                />
+
+                <CardHeadingTitle
+                  title="Budget Plans"
+                  description="Create budgets that fit your life."
+                  className="w-40 "
+                />
+              </div>
+            </div>
+          </div>
+          {/* smaller Bento 4*/}
+          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            <div className="">
+              {" "}
+              <div className="flex flex-row   gap-23.5">
+                <div className="flex flex-col justify-between  ">
+                  <Image
+                    src="/Icons/security Icon.svg"
+                    width={56}
+                    height={56}
+                    alt=""
+                  />
+                </div>
+                <Image
+                  src="/images/finger print.svg"
+                  alt="Description of image"
+                  className="relative -top-11"
+                  width={360}
+                  height={173}
+                />
+              </div>
+              <CardHeadingTitle
+                title="Security"
+                description="Your data stays safe and private.."
               />
             </div>
           </div>
