@@ -4,7 +4,7 @@ import TrustCard from "../ui/TrustCard";
 
 const trustData = [
   {
-    image: "/Icons/key-lock.svg",
+    image: "/Icons/keylock.svg",
     headingTitle: "Privacy",
     trustDescription:
       "Your financial data is yours alone. With strict privacy controls and zero data sharing without consent, we make sure your information stays confidential and under your full control.",

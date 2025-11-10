@@ -16,7 +16,7 @@ const SpendWise = () => {
         <div className="flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
           <div className="flex flex-col justify-between  ">
             <Image
-              src="/Icons/clip path group Icon.svg"
+              src="/Icons/ClippathgroupIcon.svg"
               width={56}
               height={56}
               alt=""
@@ -68,7 +68,7 @@ const SpendWise = () => {
                 />
               </div>
               <Image
-                src="/images/crypto Exchange.svg"
+                src="/images/CryptoExchange.svg"
                 alt="Description of image"
                 className="w-full h-auto relative top-10.5"
                 width={309}
