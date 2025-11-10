@@ -3,6 +3,8 @@ import HeroSection from "@/components/sections/HeroSection";
 import SpendWise from "@/components/sections/SpendWise";
 import Confidentiality from "@/components/sections/Confidentiality";
 import Testimonial from "@/components/sections/Testimonial";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -21,9 +23,13 @@ export default function Home() {
       <main className="container flex flex-col gap-16 ">
         <Features />
         <SpendWise />
+        <div className="w-full h-px bg-linear-to-r from-transparent via-gray-200 to-transparent " />
         <Confidentiality />
-        <Testimonial />
+        <div className="w-full h-px bg-linear-to-r from-transparent via-gray-200 to-transparent " />
       </main>
+      <Testimonial />
+      <CTA />
+      <Footer />
     </div>
   );
 }

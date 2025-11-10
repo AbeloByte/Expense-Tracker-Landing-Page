@@ -68,6 +68,7 @@ const HeroSection = () => {
               width={1440}
               height={497}
               quality={100}
+              className=""
             />
           </div>
         </div>

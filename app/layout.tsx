@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Urbanist, Inter } from "next/font/google";
+import { Meow_Script } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -12,6 +13,12 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"], // Light to ExtraBold
+});
+
+export const meowScript = Meow_Script({
+  variable: "--font-meow",
+  subsets: ["latin"],
+  weight: "400", // Meow Script only has one weight
 });
 
 export const metadata: Metadata = {
@@ -28,7 +35,7 @@ export default function RootLayout({
     <html>
       <body
         lang="en"
-        className={`${urbanist.variable} ${inter.variable} antialiased`}
+        className={`${urbanist.variable} ${inter.variable} ${meowScript.variable} antialiased`}
       >
         {children}
       </body>
