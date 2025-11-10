@@ -44,8 +44,8 @@ const testimonialData = [
 
 const Testimonial = ({}) => {
   return (
-    <div>
-      <div className="md:mb-32 mb-16 flex flex-col gap-16  min-w-[400px] container">
+    <div className="mt-16">
+      <div className="md:mb-32 mb-16 flex flex-col gap-16  min-w-[400px] container ">
         <div className="md:max-w-[807px] ">
           <div>
             {" "}
