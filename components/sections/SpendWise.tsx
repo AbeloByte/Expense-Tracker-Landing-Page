@@ -50,8 +50,8 @@ const SpendWise = () => {
 
         <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* smaller Bento  1*/}
-          <div className="w-[593px] flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="flex gap-11 flex-col lg:flex-row  ">
+          <div className="w-auto flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            <div className="flex gap-3 flex-col lg:flex-row  ">
               {" "}
               <div className="flex md:flex-col md:justify-between  gap-5">
                 <Image
@@ -71,13 +71,12 @@ const SpendWise = () => {
                 className="w-full h-auto relative top-10.5"
                 width={309}
                 height={317}
-              
               />
             </div>
           </div>
 
           {/* smaller Bento 2*/}
-          <div className="w-[593px] flex flex-col md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+          <div className=" flex flex-col md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             {" "}
             <div className="flex md:flex-col md:justify-between  gap-5">
               <Image
@@ -102,9 +101,9 @@ const SpendWise = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center md:flex-row gap-8">
-          {/* smaller Bento 3*/}
-          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="flex gap-11">
+          {/* smaller Bento  1*/}
+          <div className="w-auto flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            <div className="flex gap-5 flex-col-reverse lg:flex-row  ">
               {" "}
               <Image
                 src="/images/Budget plan ui.svg"
@@ -113,48 +112,45 @@ const SpendWise = () => {
                 width={310}
                 height={317}
               />
-              <div className="flex flex-col justify-between ">
+              <div className="flex md:flex-col md:justify-between  gap-5">
                 <Image
                   src="/Icons/book icon.svg"
                   width={56}
                   height={56}
                   alt=""
                 />
-
                 <CardHeadingTitle
                   title="Budget Plans"
                   description="Create budgets that fit your life."
-                  className="w-40 "
                 />
               </div>
             </div>
           </div>
-          {/* smaller Bento 4*/}
-          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="">
-              {" "}
-              <div className="flex flex-row   gap-23.5">
-                <div className="flex flex-col justify-between  ">
-                  <Image
-                    src="/Icons/security Icon.svg"
-                    width={56}
-                    height={56}
-                    alt=""
-                  />
-                </div>
-                <Image
-                  src="/images/finger print.svg"
-                  alt="Description of image"
-                  className="relative -top-11"
-                  width={360}
-                  height={173}
-                />
-              </div>
+
+          {/* smaller Bento 2*/}
+          <div className=" flex flex-col-reverse md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            {" "}
+            <div className="flex md:flex-col md:justify-between  gap-5">
+              <Image
+                src="/Icons/security Icon.svg"
+                width={56}
+                height={56}
+                alt=""
+              />
+
               <CardHeadingTitle
                 title="Security"
-                description="Your data stays safe and private.."
+                description="Your data stays safe and private."
+                className="w-full"
               />
             </div>
+            <Image
+              src="/images/finger print.svg"
+              alt="Description of image"
+              className="relative -top-11 h-auto "
+              width={360}
+              height={173}
+            />
           </div>
         </div>
       </div>

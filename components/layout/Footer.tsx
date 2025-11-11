@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <div className="container   pt-10 md:pb-0">
         <div className="flex gap-16 md:gap-50 items-centerm md:items-start flex-col md:flex-row md:mt-40 space-y-16">
-          <div className="md:flex md:flex-col md:gap-8 ">
+          <div className="flex  flex-col justify-start items-center  gap-8  ">
             <h2 className="text-2xl">Links</h2>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-x-2 md:gap-y-2 md:max-w-[210px]">
               <span>Features</span>
@@ -39,9 +39,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h2 className="text-2xl">Social Networks</h2>
-            <div className="grid grid-cols-3 md:gap-x-4 md:gap-y-6 mt-4 max-w-40 md:mt-8">
+          <div className="flex flex-col items-center">
+            <h2 className="text-2xl text-center ">Social Networks</h2>
+            <div className="grid grid-cols-3 gap-x-4   gap-y-6 mt-4 max-w-40 md:mt-8">
               <div>
                 <RiInstagramFill size={20} />
               </div>

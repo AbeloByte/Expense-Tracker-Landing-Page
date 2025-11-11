@@ -1,11 +1,14 @@
 "use client";
-import SectionHeadingTitle from "../layout/SectionHeadingTitle";
+import React, { useRef } from "react";
 import TestimonialCard from "../ui/TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+
+import { BsArrowLeftCircleFill } from "react-icons/bs";
 
 const testimonialData = [
   {
@@ -107,6 +110,8 @@ const testimonialData = [
 ];
 
 const Testimonial = ({}) => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <div className="mt-16">
       <div className="md:mb-32 mb-16 flex flex-col gap-16  min-w-[400px] container ">
@@ -114,35 +119,58 @@ const Testimonial = ({}) => {
           <div>
             {" "}
             {/* Heading Content */}
-            <div className="">
-              <p className="text-xs mb-2">TESTIMONIALS</p>
-              <div className="flex flex-col gap-5">
+            <p className="text-xs mb-2">TESTIMONIALS</p>
+            <div className="flex flex-col md:flex-row gap-10 justify-between">
+              <div>
                 <h2 className="font-bold text-5xl">
                   Don’t Take Our Word For It! <br />
                   Hear It From Our Customers.
                 </h2>
+              </div>
 
-                <div>
-                  <div>Left -- Right</div>
-                </div>
+              <div className="flex flex-row justify-center gap-1 py-1   border border-black/10 rounded-4xl w-[90px] ">
+                <button className="hover:cursor-pointer custom-prev">
+                  {" "}
+                  <BsArrowLeftCircleFill
+                    size={40}
+                    color="#454746"
+                    className="text-black"
+                  />
+                </button>
+                <button className="hover:cursor-pointer ring-offset-black custom-next">
+                  {" "}
+                  <BsArrowRightCircleFill size={40} color="#34BC68" />
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div className=" ">
-          <div className=" w-screen">
+        <div className="overflow-hidden">
+          <div className="">
             <Swiper
               modules={[Pagination, Navigation]}
-              spaceBetween={30}
-              slidesPerView={3.5}
+              navigation={{
+                prevEl: ".custom-prev",
+                nextEl: ".custom-next",
+              }}
+              pagination={{ clickable: true }}
+              spaceBetween={20}
+              slidesPerView={1} // Default: mobile view shows 1 card
               breakpoints={{
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                640: { slidesPerView: 1.3 }, // small screens (≥640px)
+                768: { slidesPerView: 2 }, // tablets (≥768px)
+                1024: { slidesPerView: 3 }, // desktops (≥1024px)
               }}
               className="mySwiper"
+              style={
+                { "--swiper-theme-color": "#10B981" } as React.CSSProperties
+              }
             >
               {testimonialData.map((t, index) => (
-                <SwiperSlide key={index} className="h-full flex w-[380px]">
+                <SwiperSlide
+                  key={index}
+                  className="h-full flex w-[350px] sm:w-[380px]"
+                >
                   <TestimonialCard
                     image={t.image}
                     description={t.description}

@@ -179,7 +179,7 @@
   background-size: cover;
 }
 
-/* Increase width when screen > 1512px */
+/* Increase width when screen > 1212px *//* Increase width when screen > 1512px */
 @media (min-width: 1440px) {
   .hero-container {
     @apply max-w-[1870px];

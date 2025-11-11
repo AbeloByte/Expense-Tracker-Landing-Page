@@ -15,7 +15,7 @@ const TestimonialCard = ({
 }: TestimonialCardProps) => {
   return (
     <div
-      className={`sm:px-6  rounded-[44px] border bg-[#F8FAFC] border-[#DFECE7] py-6 md:h-[420px] flex flex-col justify-between ${furtherClass}`}
+      className={`px-6 rounded-[44px] border bg-[#F8FAFC] border-[#DFECE7] py-6 md:h-[420px] flex flex-col justify-between ${furtherClass}`}
     >
       <div className="flex flex-col gap-4">
         <Avatar className="w-32 h-32">

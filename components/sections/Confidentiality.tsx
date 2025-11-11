@@ -15,7 +15,7 @@ const trustData = [
     headingTitle: "Security",
     trustDescription:
       "Top-grade encryption keeps your financial data safe. Only you can access your spending history and sensitive information.",
-    furtherClass: "w-[526px]",
+    furtherClass: "",
   },
   {
     image: "/Icons/status-up.svg",
@@ -42,7 +42,7 @@ const Confidentiality = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
         {trustData.map((trust, index) => (
           <TrustCard
             key={index}

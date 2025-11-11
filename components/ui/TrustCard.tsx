@@ -13,7 +13,7 @@ const TrustCard = ({
   furtherClass,
 }: TrustCardProps) => {
   return (
-    <div className="w-[563px] flex flex-col gap-5">
+    <div className="md:w-[563px] flex flex-col gap-5">
       <div className="flex flex-col justify-between  ">
         <Image src={image} width={56} height={56} alt="" />
       </div>
