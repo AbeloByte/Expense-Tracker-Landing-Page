@@ -71,7 +71,7 @@ const SpendWise = () => {
                 className="w-full h-auto relative top-10.5"
                 width={309}
                 height={317}
-                style={{ objectFit: "cover", objectPosition: "bottom" }}
+              
               />
             </div>
           </div>

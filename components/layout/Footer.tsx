@@ -9,11 +9,11 @@ import { BsTwitterX } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <div className="container ">
-        <div className="md:flex gap-50 md:mt-40 space-y-16">
-          <div className="md:flex md:flex-col md:gap-8">
+      <div className="container   pt-10 md:pb-0">
+        <div className="flex gap-16 md:gap-50 items-centerm md:items-start flex-col md:flex-row md:mt-40 space-y-16">
+          <div className="md:flex md:flex-col md:gap-8 ">
             <h2 className="text-2xl">Links</h2>
-            <div className="grid grid-cols-2 md:gap-x-2 md:gap-y-2 md:max-w-[210px]">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-x-2 md:gap-y-2 md:max-w-[210px]">
               <span>Features</span>
               <span>Terms</span>
               <span>Testimonials</span>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center my-6">
+        <div className="text-center my-6 block">
           <span className="font-semibold">©Out-Source</span>, All rights
           reserved 2025
         </div>
