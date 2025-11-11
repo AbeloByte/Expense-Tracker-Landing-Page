@@ -159,6 +159,13 @@
   background-position: bottom;
   background-repeat: no-repeat;
 }
+
+.bottom-section-dot {
+  background-image: url("/images/BottomSectionDotsBK.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .container {
   @apply mx-auto max-w-[1212px]  max-xl:px-10 max-lg:px-6 max-sm:px-4;
 }

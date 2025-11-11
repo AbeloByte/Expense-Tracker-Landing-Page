@@ -3,13 +3,13 @@ import { MdDownloadForOffline } from "react-icons/md";
 import { FaApple } from "react-icons/fa";
 const CTA = () => {
   return (
-    <div className="hero-container  bg-[url(/images/BottomSectionDotsBk.png)] bg-center bg-no-repeat inset-ring-2 inset-ring-white rounded-b-[50px]    bg-[#8C96A9]/4  shadow-[0_0_6px_#ffffff99,0_22px_30px_#8C96A91A,0_7px_6px_#8C96A91A] ">
+    <div className="hero-container hero-shadow-bg bottom-section-dot bg-center bg-no-repeat inset-ring-2 inset-ring-white rounded-b-[50px]    bg-[#8C96A9]/4  shadow-[0_0_6px_#ffffff99,0_22px_30px_#8C96A91A,0_7px_6px_#8C96A91A] ">
       <div className="hero-shadow-bg">
-        <div className="container md:flex">
-          <div className="md:flex md:flex-col gap-21">
+        <div className="container flex flex-col justift-center md:flex-row ">
+          <div className="md:flex md:flex-col gap-21 text-center md:text-left">
             <div className="mt-20">Ready to make every birr count?</div>
-            <div>
-              <div className="md:flex gap-7 items-center">
+            <div className=" flex justify-start flex-col">
+              <div className="flex gap-7 items-center justify-center">
                 <h1 className="text-6xl font-bold">Download</h1>
                 <MdDownloadForOffline size={50} />
               </div>
@@ -47,16 +47,14 @@ const CTA = () => {
             </div>
           </div>
 
-          <div className=" md:flex  md:gap-20 ">
-            <div className="">
-              <Image
-                src="/images/mobile in hand.svg"
-                alt="Download App"
-                width={848}
-                height={592}
-                className="relative  -right-30 rounded-[50px] "
-              />
-            </div>
+          <div className=" md:flex  md:gap-20 hidden lg:block">
+            <Image
+              src="/images/mobile in hand.svg"
+              alt="Download App"
+              width={848}
+              height={592}
+              className="relative  -right-30 rounded-[50px] "
+            />
           </div>
         </div>
       </div>

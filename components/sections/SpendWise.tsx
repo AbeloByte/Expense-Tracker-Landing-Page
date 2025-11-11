@@ -13,8 +13,8 @@ const SpendWise = () => {
 
       <div className="flex flex-col gap-8">
         {/* Wide Bento */}
-        <div className="flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-          <div className="flex flex-col justify-between  ">
+        <div className="flex flex-col md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+          <div className="flex flex-row md:flex-col justify-between gap-5 ">
             <Image
               src="/Icons/ClippathgroupIcon.svg"
               width={56}
@@ -28,11 +28,11 @@ const SpendWise = () => {
             />
           </div>
           <div>
-            <div className="flex gap-12">
+            <div className="lg:flex gap-12">
               <Image
                 src="/images/mobile chart ui.svg"
                 alt="Description of image"
-                className="w-full h-auto relative top-11"
+                className="w-full  relative top-11  sm:w-52 md:w-64 lg:w-80 h-auto"
                 width={309}
                 height={317}
               />
@@ -40,28 +40,26 @@ const SpendWise = () => {
               <Image
                 src="/images/mobile list of spends.svg"
                 alt="Description of image"
-                className="w-full h-auto relative -top-11"
+                className="w-full h-auto relative -top-11 hidden lg:block"
                 width={309}
                 height={360}
-                style={{ objectFit: "cover", objectPosition: "top" }}
               />
             </div>
           </div>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* smaller Bento  1*/}
-          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="flex gap-11">
+          <div className="w-[593px] flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            <div className="flex gap-11 flex-col lg:flex-row  ">
               {" "}
-              <div className="flex flex-col justify-between  ">
+              <div className="flex md:flex-col md:justify-between  gap-5">
                 <Image
                   src="/Icons/SoketIcon.svg"
                   width={56}
                   height={56}
                   alt=""
                 />
-
                 <CardHeadingTitle
                   title="Bank/Wallet Connect"
                   description="Link wallets and accounts easily."
@@ -77,35 +75,33 @@ const SpendWise = () => {
               />
             </div>
           </div>
+
           {/* smaller Bento 2*/}
-          <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="">
-              {" "}
-              <div className="flex flex-row   gap-23.5">
-                <div className="flex flex-col justify-between  ">
-                  <Image
-                    src="/Icons/money path.svg"
-                    width={56}
-                    height={56}
-                    alt=""
-                  />
-                </div>
-                <Image
-                  src="/images/Flight Ticket Cards.svg"
-                  alt="Description of image"
-                  className="scale-150 "
-                  width={360}
-                  height={173}
-                />
-              </div>
+          <div className="w-[593px] flex flex-col md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+            {" "}
+            <div className="flex md:flex-col md:justify-between  gap-5">
+              <Image
+                src="/Icons/money path.svg"
+                width={56}
+                height={56}
+                alt=""
+              />
+
               <CardHeadingTitle
                 title="Saving Plans"
                 description="Set goals and watch your savings grow."
               />
             </div>
+            <Image
+              src="/images/Flight Ticket Cards.svg"
+              alt="Description of image"
+              className=""
+              width={360}
+              height={173}
+            />
           </div>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* smaller Bento 3*/}
           <div className="w-[593px] flex rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             <div className="flex gap-11">

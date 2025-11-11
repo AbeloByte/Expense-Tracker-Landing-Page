@@ -11,7 +11,7 @@ const featureData = [
   {
     title: "Cash Overview",
     description: "See how your money moves with simple, clear charts.",
-    imageSrc: "/images/feature card small card.png",
+    imageSrc: "/images/miniflowCards.svg",
     imageAlt: "Feature 2 Image",
   },
   {
@@ -32,7 +32,7 @@ const Features = () => {
         description="Your all-in-one personal finance tracker built to simplify your money life — effortlessly log expenses, stay on top of income, and visualize your financial health in real time."
       />
 
-      <div className="flex flex-row gap-6 flex-wrap">
+      <div className="flex sm:flex-row   justify-center gap-6 flex-wrap">
         {/* Features Grid */}
         {/* Card 1 */}
         {featureData.map((feature, index) => (

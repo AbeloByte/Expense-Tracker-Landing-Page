@@ -9,7 +9,7 @@ import { BsTwitterX } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div className="md:flex gap-50 md:mt-40 space-y-16">
           <div className="md:flex md:flex-col md:gap-8">
             <h2 className="text-2xl">Links</h2>

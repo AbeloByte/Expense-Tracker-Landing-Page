@@ -31,7 +31,7 @@ const HeroSection = () => {
               </div>
 
               <div className="">
-                <h1 className="text-6xl font-semibold  px-25 text-center leading-[1.2] ">
+                <h1 className="md:text-6xl text-5xl font-semibold  px-25 text-center leading-[1.2] ">
                   Master Every Penny. Simplify Your Spending.
                 </h1>
               </div>
