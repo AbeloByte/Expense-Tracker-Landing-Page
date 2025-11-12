@@ -145,7 +145,7 @@ const Testimonial = ({}) => {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden ">
           <div className="">
             <Swiper
               modules={[Pagination, Navigation]}

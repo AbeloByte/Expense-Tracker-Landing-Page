@@ -178,24 +178,23 @@
   @apply mx-auto max-w-[1212px]  max-xl:px-10 max-lg:px-6 max-sm:px-4;
 }
 
+
 .hero-container {
-  @apply max-w-[1440px];
-  margin-left: 20px; /* small left space */
-  margin-right: 20px; /* small right space */
+  @apply w-full mx-5 ; /* responsive padding */
+  max-width: 100%; /* take full width */
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Increase width when screen > 1212px *//* Increase width when screen > 1512px */
 @media (min-width: 1440px) {
   .hero-container {
-    @apply max-w-[1870px];
-    background-size: 120%; /* expands the dots a bit */
+    background-size: 120%; /* slightly enlarge bg for very big screens */
   }
   .hero-shadow-bg {
-    background-size: 120% auto; /* widen it slightly */
+    background-size: 120% auto;
   }
 }
-
 
 h1,
 h2,
