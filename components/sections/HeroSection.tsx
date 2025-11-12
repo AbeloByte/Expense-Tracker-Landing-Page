@@ -12,7 +12,7 @@ const HeroSection = () => {
             <Header />
           </div>
 
-          <div className="text-center mt-[70px] flex flex-col gap-8">
+          <div className="text-center mt-[70px] flex flex-col gap-8 xlg:w-[1145px] mx-auto">
             {/* Hero Section Heading Texts */}
             <div className="flex flex-col gap-5">
               {/* label text */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             {/* Hero Section Button */}
             <div className="flex flex-col gap-4 mb-16">
               <div>
-                <Button variant="default" size="lg">
+                <Button variant="default" size="lg"   className="hover:bg-primary/90 hover:cursor-pointer">
                   Download App!
                 </Button>
               </div>

@@ -40,7 +40,7 @@ const SpendWise = () => {
               <Image
                 src="/images/mobile list of spends.svg"
                 alt="Description of image"
-                className="w-full h-auto relative -top-11 hidden lg:block"
+                className="w-full h-auto relative -top-11 hidden xl:block"
                 width={309}
                 height={360}
               />
@@ -51,7 +51,7 @@ const SpendWise = () => {
         <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* smaller Bento  1*/}
           <div className="w-auto flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="flex gap-3 flex-col lg:flex-row  ">
+            <div className="flex gap-3 flex-col xl:flex-row  ">
               {" "}
               <div className="flex md:flex-col md:justify-between  gap-5">
                 <Image
@@ -76,7 +76,7 @@ const SpendWise = () => {
           </div>
 
           {/* smaller Bento 2*/}
-          <div className=" flex flex-col md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+          <div className=" flex flex-col xl:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             {" "}
             <div className="flex md:flex-col md:justify-between  gap-5">
               <Image
@@ -100,10 +100,11 @@ const SpendWise = () => {
             />
           </div>
         </div>
+
         <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* smaller Bento  1*/}
           <div className="w-auto flex justify-center md:justify-baseline rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
-            <div className="flex gap-5 flex-col-reverse lg:flex-row  ">
+            <div className="flex gap-5 flex-col-reverse xl:flex-row  ">
               {" "}
               <Image
                 src="/images/Budget plan ui.svg"
@@ -128,7 +129,7 @@ const SpendWise = () => {
           </div>
 
           {/* smaller Bento 2*/}
-          <div className=" flex flex-col-reverse md:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
+          <div className=" flex flex-col-reverse xl:flex-row rounded-[44px] border gap-17  bg-[#F8FAFC] border-[#DFECE7] px-10.5 py-10.5 ">
             {" "}
             <div className="flex md:flex-col md:justify-between  gap-5">
               <Image

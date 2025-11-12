@@ -32,11 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
-      <body
-        lang="en"
-        className={`${urbanist.variable} ${inter.variable} ${meowScript.variable} antialiased`}
-      >
+    <html lang="en" className={`${urbanist.variable} ${inter.variable} ${meowScript.variable} scroll-smooth`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

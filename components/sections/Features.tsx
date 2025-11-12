@@ -11,7 +11,7 @@ const featureData = [
   {
     title: "Cash Overview",
     description: "See how your money moves with simple, clear charts.",
-    imageSrc: "/images/miniflowCards.svg",
+    imageSrc: "/images/analysisGraph.svg",
     imageAlt: "Feature 2 Image",
   },
   {
@@ -25,7 +25,7 @@ const featureData = [
 
 const Features = () => {
   return (
-    <div className="flex flex-col gap-16 ">
+    <section id="features" className="scroll-mt-24 md:scroll-mt-28 flex flex-col gap-16">
       {/* Heading Content */}
       <SectionHeadingTitle
         title="Take Control of Your Finances"
@@ -51,7 +51,7 @@ const Features = () => {
           </FeatureCard>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

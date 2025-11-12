@@ -52,7 +52,7 @@
   --font-heading: var(--font-urbanist);
   --font-body: var(--font-inter);
   --font-sans: var(--font-body);
-  --font-meow: var(--font-meow);
+
 
   /* === Button Colors === */
   --primary: hsl(143, 57%, 47%);
@@ -140,6 +140,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   /* html {
     --font-heading: var(--font-urbanist);
     --font-body: var(--font-inter);
@@ -151,7 +154,6 @@
     --font-heading: var(--font-urbanist);
     --font-body: var(--font-inter);
     --font-sans: var(--font-body);
-    --font-meow: var(--font-meow);
   }
 }
 .hero-shadow-bg {
@@ -166,6 +168,10 @@
   background-image: url("/images/BottomSectionDotsBK.png");
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.script-font {
+  font-family: var(--font-meow), cursive;
 }
 
 .container {
@@ -190,9 +196,7 @@
   }
 }
 
-.script-font {
-  font-family: var(--font-meow), cursive;
-}
+
 h1,
 h2,
 h3,

@@ -5,18 +5,18 @@ import { IoLogoGoogleplus } from "react-icons/io";
 import { SiLinkedin } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
       <div className="container   pt-10 md:pb-0">
-        <div className="flex gap-16 md:gap-50 items-centerm md:items-start flex-col md:flex-row md:mt-40 space-y-16">
+        <div className="flex sm:flex sm:flex-col gap-16 lg:gap-50 items-center md:items-start flex-col md:flex-row md:mt-40 space-y-16">
           <div className="flex  flex-col justify-start items-center  gap-8  ">
             <h2 className="text-2xl">Links</h2>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-x-2 md:gap-y-2 md:max-w-[210px]">
-              <span>Features</span>
+                 <Link href="#features" >Features</Link>
+          <Link href="#testimonials" >Testimonials</Link>
               <span>Terms</span>
-              <span>Testimonials</span>
               <span>Privacy</span>
             </div>
           </div>

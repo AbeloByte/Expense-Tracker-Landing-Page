@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { HiMenu, HiX } from "react-icons/hi";
+import Link from "next/link";
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -18,14 +19,14 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="hidden md:flex flex-1 justify-center gap-5 items-center font-medium text-foreground-secondary">
-          <button className="hover:underline">Features</button>
-          <button className="hover:underline">Testimonials</button>
-        </div>
+        <nav className="hidden md:flex flex-1 justify-center gap-5 items-center font-medium text-foreground-secondary">
+          <Link href="#features" className="hover:cursor-pointer hover:text-accent-foreground">Features</Link>
+          <Link href="#testimonials" className="hover:cursor-pointer hover:text-accent-foreground">Testimonials</Link>
+        </nav>
 
         <div className="flex items-center gap-3">
           <div className="hidden md:block">
-            <Button className="" variant="default" size="lg">
+            <Button className="hover:bg-primary/90" variant="default" size="lg">
               Get the App
             </Button>
           </div>
@@ -70,26 +71,27 @@ const Header = () => {
               </div>
 
               <nav className="flex flex-col gap-4 mt-2">
-                <a
+                <Link
                   href="#features"
                   onClick={() => setOpen(false)}
                   className="text-lg font-medium"
                 >
                   Features
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#testimonials"
                   onClick={() => setOpen(false)}
                   className="text-lg font-medium"
                 >
                   Testimonials
-                </a>
+                </Link>
               </nav>
 
               <div className="mt-auto">
                 <Button
                   variant="default"
                   size="lg"
+                  className="hover:bg-primary/90"
                   onClick={() => setOpen(false)}
                 >
                   Get the App
