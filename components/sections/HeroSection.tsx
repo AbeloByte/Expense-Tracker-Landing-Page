@@ -31,12 +31,12 @@ const HeroSection = () => {
               </div>
 
               <div className="">
-                <h1 className="md:text-6xl text-5xl font-semibold  px-25 text-center leading-[1.2] ">
+                <h1 className="md:text-6xl text-5xl font-semibold  px-25 text-center leading-[1.2]  ">
                   Master Every Penny. Simplify Your Spending.
                 </h1>
               </div>
               <div className="">
-                <p className="mx-auto text-center max-w-[639px] text-lg">
+                <p className="mx-auto text-center w-96 md:w-[639px] md:text-lg text-foreground-muted">
                   Track every birr, budget smarter, and reach your goals—whether
                   you’re at home, at work, or on the move.
                 </p>
